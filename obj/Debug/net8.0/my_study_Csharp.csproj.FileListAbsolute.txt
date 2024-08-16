@@ -1,0 +1,15 @@
+/home/lucas/my_study_Csharp/bin/Debug/net8.0/my_study_Csharp
+/home/lucas/my_study_Csharp/bin/Debug/net8.0/my_study_Csharp.deps.json
+/home/lucas/my_study_Csharp/bin/Debug/net8.0/my_study_Csharp.runtimeconfig.json
+/home/lucas/my_study_Csharp/bin/Debug/net8.0/my_study_Csharp.dll
+/home/lucas/my_study_Csharp/bin/Debug/net8.0/my_study_Csharp.pdb
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.AssemblyInfoInputs.cache
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.AssemblyInfo.cs
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.csproj.CoreCompileInputs.cache
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.sourcelink.json
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.dll
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/refint/my_study_Csharp.dll
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.pdb
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/my_study_Csharp.genruntimeconfig.cache
+/home/lucas/my_study_Csharp/obj/Debug/net8.0/ref/my_study_Csharp.dll
