@@ -10,3 +10,6 @@ pessoa1.Apresentar();
 
 Console.WriteLine(pessoa1.Nome);
 Console.WriteLine(pessoa1.Idade);
+
+DateTime dataAtual = DateTime.Now;
+Console.WriteLine(dataAtual);
