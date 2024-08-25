@@ -24,20 +24,20 @@ namespace my_study_Csharp.models
                     Console.WriteLine("Cadastro de cliente");
                     break;
 
-                    case "2";
+                    case "2":
                     Console.WriteLine("Buscar cliente");
                     break;
 
-                    case "3";
+                    case "3":
                     Console.WriteLine("Apagar cliente");
                     break;
 
-                    case "4";
+                    case "4":
                     Console.WriteLine("Encerrando...");
                     exibirMenu = false;
                     break;
 
-                    default;
+                    default:
                     Console.WriteLine("Opção inválida");
                     break;
                 }

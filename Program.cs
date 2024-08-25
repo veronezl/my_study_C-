@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿﻿// See https://aka.ms/new-console-template for more information
 
 using my_study_Csharp.models;
 using System;
@@ -45,5 +45,11 @@ class Program
 
         DoWhile dowhile = new DoWhile();
         dowhile.SomarNumeros();
+
+        Console.WriteLine();
+
+        Array_ array_ = new Array_(); // Cria uma instância da classe Array_
+        array_.ArrayInt();            // Chama o método ArrayInt na instância criada
+
     }
 }
