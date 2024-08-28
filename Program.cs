@@ -51,5 +51,10 @@ class Program
         Array_ array_ = new Array_(); // Cria uma instância da classe Array_
         array_.ArrayInt();            // Chama o método ArrayInt na instância criada
 
+        Console.WriteLine();
+
+        Lista_ lista_ = new Lista_();
+        lista_.ExibirLista(); // Chama o método ListaInt na instância criada
+
     }
 }

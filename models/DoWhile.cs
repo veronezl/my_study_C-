@@ -10,11 +10,20 @@ namespace my_study_Csharp.models
             do
             {
                 Console.WriteLine("Digite um número ou zero para encerrar");
-                numero = Convert.ToInt32(Console.ReadLine());
 
-                soma += numero;
+                // Verifica se a entrada é um número válido
+                string entrada = Console.ReadLine();
 
-            }while(numero != 0);
+                if (int.TryParse(entrada, out numero))
+                {
+                    soma += numero;
+                }
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Por favor, digite um número válido.");
+                }
+
+            } while (numero != 0);
 
             Console.WriteLine($"Total da soma dos números digitados é: {soma}");
         }

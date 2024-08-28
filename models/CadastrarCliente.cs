@@ -4,7 +4,7 @@ namespace my_study_Csharp.models
     {
         public void Cadastrar()
         {
-            string opcao;
+            string opcao = string.Empty;  // Inicializando opcao com uma string vazia
             bool exibirMenu = true;
 
             while(exibirMenu)
@@ -16,7 +16,7 @@ namespace my_study_Csharp.models
                 Console.WriteLine("3 - Apagar cliente");
                 Console.WriteLine("4 - Encerrar");
 
-                opcao = Console.ReadLine(); // Lê a entrada do usuario
+                opcao = Console.ReadLine() ?? string.Empty; // Verificando se a entrada é nula
 
                 switch(opcao)
                 {
