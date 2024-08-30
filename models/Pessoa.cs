@@ -7,7 +7,27 @@ namespace my_study_Csharp.models
 {
     public class Pessoa
     {
-        public string Nome { get; set; } = string.Empty; // get => pega um valor / set => adiciona um valor
+        private string _nome;
+        public string Nome
+        {
+            get
+            {
+                return _nome.ToUpper(); // toUpper retorma todas as letras em maísculo 
+            }
+
+            set
+            {
+
+                if (value == "")
+                {
+                    throw new ArgumentException("O nome não pode ser vazio.");
+                }
+
+                _nome = value;
+
+            }
+
+        } // get => pega um valor / set => adiciona um valor
         public int Idade { get; set; } // get => pega um valor / set => adiciona um valor
 
         public void Apresentar() // Método ou Função
