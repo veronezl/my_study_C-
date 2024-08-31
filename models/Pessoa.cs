@@ -8,9 +8,11 @@ namespace my_study_Csharp.models
     public class Pessoa
     {
         private string _nome;
+        private int _idade;
+
         public string Nome
         {
-            get
+            get   // Poderiamos resumir o código em: get => _nome.ToUpper(); 
             {
                 return _nome.ToUpper(); // toUpper retorma todas as letras em maísculo 
             }
@@ -28,11 +30,28 @@ namespace my_study_Csharp.models
             }
 
         } // get => pega um valor / set => adiciona um valor
-        public int Idade { get; set; } // get => pega um valor / set => adiciona um valor
+
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+        public int Idade 
+        { 
+            get => _idade;
+
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser negativa.");
+                }
+
+                _idade = value;
+
+            } 
+        } // get => pega um valor / set => adiciona um valor
 
         public void Apresentar() // Método ou Função
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos."); // (parâmetro ou argumento)
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos."); // (parâmetro ou argumento)
         }
     }
 }
