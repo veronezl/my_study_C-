@@ -15,8 +15,23 @@ class Program
         pessoa1.Idade = 25;
         pessoa1.Apresentar();
 
+        Console.WriteLine();
+
         Console.WriteLine(pessoa1.Nome);
         Console.WriteLine(pessoa1.Idade);
+
+        Console.WriteLine();
+
+        Pessoa pessoa2 = new Pessoa();
+        pessoa2.Nome = "João";
+        pessoa2.Sobrenome = "Silva";
+
+        Curso cursoDeIngles = new Curso();
+        cursoDeIngles.Nome = "Curso de Inglês";
+        cursoDeIngles.Alunos = new List<Pessoa>();
+        cursoDeIngles.Alunos.Add(pessoa1);
+        cursoDeIngles.Alunos.Add(pessoa2);
+        cursoDeIngles.ListarAlunos();
 
         Console.WriteLine();
 

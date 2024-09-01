@@ -26,5 +26,17 @@ namespace my_study_Csharp.models
        {
         Alunos.Remove(aluno);
        }
+
+       public void ListarAlunos()
+       {
+        Console.WriteLine(new string('-', 50));
+        Console.WriteLine($"Alunos do {Nome}:");
+        Console.WriteLine(new string('-', 50));
+        foreach(Pessoa aluno in Alunos)
+        {
+            Console.WriteLine(aluno.NomeCompleto);
+        }
+        Console.WriteLine(new string('-', 50));
+       }
     }
 }
