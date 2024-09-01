@@ -13,7 +13,8 @@ namespace my_study_Csharp.models
         }
         public Pessoa(string nome, string sobrenome)
         {
-
+            Nome = nome;
+            Sobrenome = sobrenome;
         }
         private string _nome;
         private int _idade;

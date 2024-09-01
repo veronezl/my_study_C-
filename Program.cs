@@ -9,9 +9,8 @@ class Program
     {
        
         //Exemplo de uso da classe Pessoa
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.Nome = "Lucas";
-        pessoa1.Sobrenome = "Veronez";
+        Pessoa pessoa1 = new Pessoa(nome: "Lucas", sobrenome: "Veronez");
+        
         pessoa1.Idade = 25;
         pessoa1.Apresentar();
 
@@ -22,9 +21,8 @@ class Program
 
         Console.WriteLine();
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.Nome = "João";
-        pessoa2.Sobrenome = "Silva";
+        Pessoa pessoa2 = new Pessoa("João", "Silva"); // Pode fazer igual a linha 12.
+      
 
         Curso cursoDeIngles = new Curso();
         cursoDeIngles.Nome = "Curso de Inglês";
