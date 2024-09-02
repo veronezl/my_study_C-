@@ -32,10 +32,14 @@ namespace my_study_Csharp.models
         Console.WriteLine(new string('-', 50));
         Console.WriteLine($"Alunos do {Nome}:");
         Console.WriteLine(new string('-', 50));
-        foreach(Pessoa aluno in Alunos)
+
+        for (int count = 0; count < Alunos.Count; count++)
         {
-            Console.WriteLine(aluno.NomeCompleto);
+            // string texto = "N " + count + " - " + Alunos[count].NomeCompleto;
+            string texto = $"N° {count + 1} - {Alunos[count].NomeCompleto}";
+            Console.WriteLine(texto);
         }
+
         Console.WriteLine(new string('-', 50));
        }
     }

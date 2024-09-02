@@ -24,7 +24,7 @@ namespace my_study_Csharp.models // Namespace começa aqui
             int contadorForeach = 0;
             foreach(int valor in arr)
             {
-                Console.WriteLine($"Posição N {contadorForeach} - {valor}");
+                Console.WriteLine($"Posição N° {contadorForeach} - {valor}");
                 contadorForeach++;
             }
         } // Fechar o método
