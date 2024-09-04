@@ -7,6 +7,14 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Lendo um arquivo
+        string[] linhas = File.ReadAllLines("arquivos/arquivoLeitura.txt");
+        foreach (var linha in linhas)
+        {
+            Console.WriteLine(linha);
+        }
+
+        Console.WriteLine();
        
         //Exemplo de uso da classe Pessoa
         Pessoa pessoa1 = new Pessoa(nome: "Lucas", sobrenome: "Veronez");
