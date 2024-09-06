@@ -7,13 +7,19 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Exemple de como tratar um exceção
+        try  // try => tente fazer o código
+        {
         // Lendo um arquivo
         string[] linhas = File.ReadAllLines("arquivos/arquivoLeitura.txt");
         foreach (var linha in linhas)
         {
             Console.WriteLine(linha);
         }
-
+        } catch(Exception ex) //catch => obtem a exceção acima e assume o a ação 
+        {
+            Console.WriteLine("Erro ao ler arquivo: " + ex.Message);
+        }
         Console.WriteLine();
        
         //Exemplo de uso da classe Pessoa
@@ -77,6 +83,14 @@ class Program
 
         Lista_ lista_ = new Lista_();
         lista_.ExibirLista(); // Chama o método ListaInt na instância criada
+
+        Console.WriteLine();
+
+        // Criando um objeto da classe Filas
+        Filas filas = new Filas();
+
+        // Chamando o método para gerenciar a fila
+        filas.GerenciarFila();
 
     }
 }
