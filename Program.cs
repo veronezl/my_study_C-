@@ -97,5 +97,11 @@ class Program
 
         // Chamando o Método para gerenciar a pilha
         pilhas.GerenciarPilha();
+
+         // Criando um objeto da classe Dictionary
+        Dictionary dic = new Dictionary();
+
+        // Chamando o método para gerenciar o dicionário
+        dic.GerenciarDictionary();
     }
 }
