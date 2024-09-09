@@ -92,5 +92,10 @@ class Program
         // Chamando o método para gerenciar a fila
         filas.GerenciarFila();
 
+        // Criando um objeto da classe Pilhas
+        Pilhas pilhas = new Pilhas();
+
+        // Chamando o Método para gerenciar a pilha
+        pilhas.GerenciarPilha();
     }
 }
